@@ -8,7 +8,7 @@ Refer to [this Github Repository](https://github.com/ananyagupta6/NP-LAB) for al
 A machine (client) makes a request to connect to another machine (server) for providing some service. The services running on the server run on known ports (application identifiers) and the client needs to know the address of the server machine and this port in order to connect to the server. On the other hand, the server does not need to know about the address or the port of the client at the time of connection initiation. The first packet which the client sends as a request to the server contains these information about the client which are further used by the server to send any information. Client (Active Open) acts as the active device which makes the first move to establish the connection whereas the server (Passive Open) passively waits for such requests from some client.
 
 
-## Socket Programming
+### Socket Programming
 
 - Same machine: signals/pipes
 - Different machine: sockets (full-duplex communication)
@@ -82,7 +82,7 @@ Just don't go beyond 65535. Avoid reserved ports. Safe to use anything in the ra
 
 ---
 
-## Understanding Socket Programming Code
+### Understanding Socket Programming Code
 
 - Make sure you convert all data to a character/character array before passing it to the server/client side.
 - Most functions return -1 in case of failure. Make sure you check for that condition
@@ -93,6 +93,12 @@ Just don't go beyond 65535. Avoid reserved ports. Safe to use anything in the ra
 
 ---
 
+## Lab 3
+---
+
+## Lab 5
+---
+
 ## Lab 8
 
 Packet Tracer Modes
@@ -100,12 +106,12 @@ Packet Tracer Modes
 - Logical (setup) and Physical (arrangement of buildings and all)
 - Simulation (you can control packet transfer and other operations) and Realtime (sends packets on its own, like how it would do irl)
 
-## Cables Used
+### Cables Used
 
 - Cross-over: joins two networks of the same type (PC-PC, Router-Router)
 - Straight-through: it's a type of twisted pair cable that is used to connect a computer to a network hub (router)
 
-## CLI commands to configure a router
+### CLI commands to configure a router
 ```
 enable
 configure terminal
@@ -119,3 +125,37 @@ no shutdown
 
 exit
 ```
+---
+## Lab 9
+
+Topology: How nodes, devices are physically (how it's arranged) and logically (how data flows) arranged in a network. Data efficiency, energy usage, operational and maintenance costs depend on the network topology
+
+### Bus Topology 
+![](https://raw.githubusercontent.com/nandiniproothi/nps-lab-notes/main/img/bus-topology.png)
+
+- Has a bus/backbone
+- Single network cable runs in a LAN
+
+### Ring Topology
+
+![](https://raw.githubusercontent.com/nandiniproothi/nps-lab-notes/main/img/ring-topology.png)
+
+- Each node keeps forwarding the message till it reaches the destination. Each node has a repeater
+
+### Star Topology
+
+![](https://raw.githubusercontent.com/nandiniproothi/nps-lab-notes/main/img/star-topology.png)
+
+- Add an extra PT-SWITCH-NM-1CFE port to the switch (one fast ethernet)
+- Everything goes via the central location (hub)
+- Set default gateway for each PC
+
+### Mesh Topology
+
+![](https://raw.githubusercontent.com/nandiniproothi/nps-lab-notes/main/img/mesh-topology.png)
+
+- All nodes are connected to each other
+- Failure in one node doesn't lead to a failure in others
+
+---
+## Lab 10
