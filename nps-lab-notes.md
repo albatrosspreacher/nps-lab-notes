@@ -91,6 +91,19 @@ Just don't go beyond 65535. Avoid reserved ports. Safe to use anything in the ra
 
 ## Lab 2
 
+### File Opening Functions
+- Add header file `#include <fcntl.h>`
+- access(filename, F_OK) should not be -1 then the file exists
+- use fopen(filepointer, operating-mode); operating-modes: read (r), write (w), append (a)
+- use fgetc(filepointer) to get characters
+- use fprintf(filepointer, character/string) to write to the file
+```
+if(feop(filepointer)){
+  break; //to find eof
+}
+```
+
+
 ---
 
 ## Lab 3
