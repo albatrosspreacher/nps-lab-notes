@@ -159,3 +159,32 @@ Topology: How nodes, devices are physically (how it's arranged) and logically (h
 
 ---
 ## Lab 10
+
+### RIP Routing
+
+- Configure all devices
+- Connect the RIP routers using DCE cable
+
+Code for setting up router for RIP
+```
+enable
+configure terminal
+interface fastinterface 0/0
+ip address 10.0.0.1 255.0.0.0
+no shutdown
+exit
+
+interface serial 0/0/0
+ip address 20.0.0.1 255.0.0.0
+clock rate 64000
+bandwidth 64
+no shutdown
+exit
+
+router rip
+network 10.0.0.0
+network 20.0.0.0
+exit
+
+copy running-config startup-config
+```
