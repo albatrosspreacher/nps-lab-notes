@@ -23,14 +23,14 @@ A machine (client) makes a request to connect to another machine (server) for pr
 Client: Create a socket, Establish a connection, Send/Receive data, Close the socket
 Server: Create a socket, Bind the socket (attach a local address to the socket), Listen for requests, Accept a connection, Send/receive data, Close the socket
 
-![](https://github.com/nandiniproothi/nps-lab-notes/blob/main/img/tcp-socket.png?raw=true)
+![](https://raw.githubusercontent.com/nandiniproothi/nps-lab-notes/main/img/tcp-socket.png?token=ALD5GB7QNU5FG2L2BTU3DMC754X7G)
 
 ### For UDP
 
 Client: Create a socket, Send/Receive data
 Server: Create a socket, Bind the socket (attach a local address to the socket), Send/receive data
 
-![](https://github.com/nandiniproothi/nps-lab-notes/blob/main/img/tcp-socket.png?raw=true)
+![](https://raw.githubusercontent.com/nandiniproothi/nps-lab-notes/main/img/udp-socket.png?token=ALD5GB5GXJRLHBND25M2SG2754YFU)
 
 ### Header Files
 - sys/types.h: defines socket address in unsigned long
@@ -61,7 +61,7 @@ Just don't go beyond 65535. Avoid reserved ports. Safe to use anything in the ra
 
 ### Byte Ordering
 
-![](https://github.com/nandiniproothi/nps-lab-notes/blob/main/img/byte-ordering.png?raw=true)
+![](https://raw.githubusercontent.com/nandiniproothi/nps-lab-notes/main/img/byte-ordering.png?token=ALD5GB7MBKRK2S6XC2DM5AS754YII)
 
 ### IP Address Functions
 - inet_aton
@@ -78,7 +78,7 @@ Just don't go beyond 65535. Avoid reserved ports. Safe to use anything in the ra
 - close
 - shutdown
 
-![](https://github.com/nandiniproothi/nps-lab-notes/blob/main/img/def.png?raw=true)
+![](https://raw.githubusercontent.com/nandiniproothi/nps-lab-notes/main/img/def.png?token=ALD5GB3UCXOI6M3CHKUBLK2754YHG)
 
 ---
 
@@ -90,4 +90,26 @@ Just don't go beyond 65535. Avoid reserved ports. Safe to use anything in the ra
 ---
 
 ## Lab 2
+
+---
+
+## Lab 8
+
+Packet Tracer Modes
+
+- Logical (setup) and Physical (arrangement of buildings and all)
+- Simulation (you can control packet transfer and other operations) and Realtime (sends packets on its own, like how it would do irl)
+
+# Cables Used
+
+- Cross-over: joins two networks of the same type (PC-PC, Router-Router)
+- Straight-through: 
+
+
+
+
+
+
+
+
 
