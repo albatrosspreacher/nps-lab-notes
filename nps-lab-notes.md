@@ -100,16 +100,22 @@ Packet Tracer Modes
 - Logical (setup) and Physical (arrangement of buildings and all)
 - Simulation (you can control packet transfer and other operations) and Realtime (sends packets on its own, like how it would do irl)
 
-# Cables Used
+## Cables Used
 
 - Cross-over: joins two networks of the same type (PC-PC, Router-Router)
-- Straight-through: 
+- Straight-through: it's a type of twisted pair cable that is used to connect a computer to a network hub (router)
 
+## CLI commands to configure a router
+```
+enable
+configure terminal
+interface fastethernet 0/0
+ip address 192.168.1.1 255.255.255.0
+no shutdown
 
+interface fastethernet 1/0
+ip address 192.168.2.1 255.255.255.0
+no shutdown
 
-
-
-
-
-
-
+exit
+```
