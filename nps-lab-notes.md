@@ -204,6 +204,8 @@ Topology: How nodes, devices are physically (how it's arranged) and logically (h
 
 ### RIP Routing
 
+![](https://raw.githubusercontent.com/nandiniproothi/nps-lab-notes/main/img/rip-routing.png)
+
 - Configure all devices
 - Connect the RIP routers using DCE cable
 
@@ -229,4 +231,37 @@ network 20.0.0.0
 exit
 
 copy running-config startup-config
+
 ```
+### RIP Commands
+`router rip` for enabling RIP protocol
+`network x.y.w.z` configure the network i.e. directly connected
+`no network x.y.w.z` removes the network from RIP routing process
+`version 2` for RIP v2
+`version 1` for RIP v1
+`no auto-summary` to turn off auto summarisation in v2
+`passive-interface serial 0/0/0` RIP updates will not be sent to this port
+`no ip split-horizon` turns off split horizon (on by default)
+`ip split-horizon` enables split horizon
+`timers basic 30 90 180 270 360` update (s), invalid (s), hold-down (s), flush (s), sleep (ms)
+`debug ip rip` displays all RIP activity in real time
+`show ip rip database` displays contents of RIP database
+
+---
+
+### OSPF Routing
+
+![](https://raw.githubusercontent.com/nandiniproothi/nps-lab-notes/main/img/ospf-routing.png)
+
+- Open Shortest Path First
+- Use wildcard mask for OSPF
+
+```
+enable
+configure terminal
+router ospf 1 
+network 10.10.10.0 0.0.0.3 area 0
+network 10.10.10.4 0.0.0.3 area 0
+```
+
+`router ospf 1 //1 is the process ID`
