@@ -103,13 +103,42 @@ if(feop(filepointer)){
 }
 ```
 
-
 ---
 
 ## Lab 3
+
+```
+int pid
+pid = fork();
+if(pid>0){
+  //parent
+}
+else{
+  //child
+}
+```
+
+- If fork() succeeds, it returns the PID of the child to the parent process, and returns 0 to the child process. If it fails, it returns -1 to the parent process and no child is created
+- getpid() for process ID
+- getppid() for paren't process ID
+
 ---
 
 ## Lab 5
+
+### For printing the IP address
+```
+struct hostent *host_entry;
+int hostname;
+char hostname[256];
+char *ipbuffer;
+hostname = gethostname(hostbuffer, sizeof(hostbuffer));
+host_entry = gethostbyname(hostbuffer);
+ipbuffer = inet_ntoa(*(structu in_addr*)host_entry->h_addr_list[0]);
+char ip[50];
+strcpy(ip, ipbuffer);
+
+```
 ---
 
 ## Lab 8
