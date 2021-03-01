@@ -1,5 +1,8 @@
 # nps-lab-notes
 
+![](https://img.shields.io/github/license/nandiniproothi/nps-lab-notes)
+![](https://img.shields.io/github/stars/nandiniproothi/nps-lab-notes)
+
 Concise notes for NPS Lab, ICT Dept, MIT, Manipal
 
 Labs:
